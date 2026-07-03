@@ -10,10 +10,10 @@
 
 /* 
 JS automatically detects data types. It's dynamically typed:
-variables can hold nay data type without declaration.
+variables can hold any data type without declaration.
 The type is inferred from the assigned value.
-Types can be changeed during runtime.
-This above dynamic typing cabn be verified using typeof operator.
+Types can be changed during runtime.
+This above dynamic typing can be verified using typeof operator.
 */ 
 
 // User object = {property:value}
@@ -25,7 +25,7 @@ console.log(user.age);
 //  Why don't we use REPL for development purpose ?
 
 /* 
-In terminal, during a single REPL session, all the variables, objects created uring that time are
+In terminal, during a single REPL session, all the variables, objects created during that time are
 stored during that session only, and gets flushed out in case of cntrl+c, which means 
 we are out of node.js environment
 */
