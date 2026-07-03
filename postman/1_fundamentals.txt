@@ -1,0 +1,60 @@
+Postman -> tool essentials for testing and developing APIs
+
+What Postman is -> allows you to test your API endpoints without the 
+need of an frontend Interface.
+
+You don't need to wait for frontend developers to develop the
+frontend, then you can test the APIs.
+
+You can do that by using Postman.
+
+Postman -> allows you to send requests to APIs, and see the response directly in Postman.
+
+Download Postman -> Postman_Interaface.png
+
+Now in Postman -> Many things -> but we need to focus on Collections & requests.
+To create new Collection -> Press on + (create new Collection) -> Blank Collection.
+Once the Collection is created -> Users (Rename) -> Store all User related APIs.
+Product (collections) -> store all the Product related APIs in that Collection.
+
+We have not created any APIs till now as such. -> search "json placeholder" -> Free FAKE REST API (dummy APIs)
+
+1. GET API Call in Postman -> using Dummy User API call -> to check response using GET HTTTP method.
+
+Scroll down click on that /Users call -> Users placeholder get's opened. -> Put 2_jsonPlaceholder image here
+Then add 3_usersPlaceholder image here 
+
+Copy the User Placeholder URL -> Add 4_userPlaceholderLink
+
+10 Users in this Database
+
+Copy & paste the URL in the Postman GET request HTTP Method -> as shown in this image here -> add 5_GEThttpRequest here.
+Once things are ready You click on SEND.-> output -> add image 6_GEThttpRequestOutput
+
+In the Postman Interface -> You'll see the response of the GET API User Call.
+In the browser you can check that the, API response is very similar to the one we get in our broswer as well.
+
+2. Create Users -> Use the POST http method in the Postman Interface to check whether an API could work or not.
+
+Now we need to send Data in the body, whatever user we want to create; the usr information we'll send it to the server in our body.
+In the Postman Interface -> Go to Body -> select RAW -> select JSON here. -> Add image 7_POSThttpMethod
+
+Create a simple User object:
+
+{
+     "name: Jyoti Dixit"
+     "email" test@gmail.com" 
+}
+
+Click SEND -> if request was successful -> you can see that this particular User with name & email has been created with "Id: 11"
+
+Keep this in mind that they are Dummy API, they may not store your information there.
+So, next time you are requesting for the User ID with Id:11. You may not get the Response, as it it's Dummy API.
+But once we get in depth & develop our own API's, you'll be able to understand this very very clearly. 
+
+
+--- Apart from sending teh requests, Postman is excellent for organising your APIs for testing.
+--- You can create a collection for different aspects of your APIs.
+--- Making it easier to manage & Test various endpoints.
+
+--- this was a Quick overview of getting started with Postman.
