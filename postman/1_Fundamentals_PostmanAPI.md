@@ -12,7 +12,7 @@ Postman allows you to send requests to APIs and see the response directly inside
 
 **Download Postman:**
 
-![Postman Interface](images/1_postmanInterface.png)
+![Postman Interface](images/1_postmanInterface.png?v=2)
 
 ## Collections & Requests
 
@@ -32,23 +32,23 @@ Using the dummy Users API to check the response with the GET HTTP method.
 
 Scroll down and click on the `/users` endpoint — the Users placeholder page opens:
 
-![JSONPlaceholder Resources](images/2_jsonplaceholder.png)
+![JSONPlaceholder Resources](images/2_jsonplaceholder.png?v=2)
 
-![Users Placeholder](images/3_usersPlaceholder.png)
+![Users Placeholder](images/3_usersPlaceholder.png?v=2)
 
 Copy the Users placeholder URL:
 
-![User Placeholder Link](images/4_userPlaceholderLink.png)
+![User Placeholder Link](images/4_userPlaceholderLink.png?v=2)
 
 > There are **10 users** in this dummy database.
 
 Copy and paste the URL into the Postman GET request's URL field, as shown below:
 
-![GET HTTP Request](images/5_GEThttpRequest.png)
+![GET HTTP Request](images/5_GEThttpRequest.png?v=2)
 
 Once everything is set, click **Send**. Output:
 
-![GET HTTP Request Output](images/6_GEThttpRequestOutput.png)
+![GET HTTP Request Output](images/6_GEThttpRequestOutput.png?v=2)
 
 In the Postman interface, you'll see the response of the GET Users API call. If you check the same URL in your browser, you'll notice the API response looks very similar to what Postman shows.
 
@@ -62,7 +62,7 @@ We need to send data in the **body** — whatever user information we want to cr
 
 In Postman: go to **Body** → select **raw** → select **JSON**.
 
-![POST HTTP Method](images/7_POSThttpMethod.png)
+![POST HTTP Method](images/7_POSThttpMethod.png?v=2)
 
 Example request body (a simple User object):
 
@@ -75,7 +75,7 @@ Example request body (a simple User object):
 
 Click **Send**. If the request is successful, you'll see that this user (with name and email) has been created, and the response includes a new `"id"` (e.g. `id: 11`):
 
-![POST HTTP Method Output](images/8_POSThttpMethodOutput.png)
+![POST HTTP Method Output](images/8_POSThttpMethodOutput.png?v=2)
 
 > **Note:** Since this is a dummy API, it doesn't actually persist your data. So the next time you request the user with `id: 11`, you likely won't get a response — because it was never really saved.
 >
